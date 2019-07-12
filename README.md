@@ -38,17 +38,28 @@ The process of compiling and executing the project is as follows:
 - Open the aforementioned simulator
 - Choose the lowest resolution and graphics quality of fastest for best results
 - Click the path planning SELECT
+
 Now the path planner is running and listening on port 4567 for messages from the simulator. Next step is to open Udacity's simulator:
 
 ![Simulator first screen](images/simulator.png)
 
-Click the "Select" button and let EGO self driving on the highway.
 
 # [Rubic](https://review.udacity.com/#!/rubrics/1020/view) points
 
 ## Compilation
 
 ### The code compiles correctly.
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/workspace/CarND-Path-Planning-Project/build
+Scanning dependencies of target path_planning
+[ 50%] Building CXX object CMakeFiles/path_planning.dir/src/main.cpp.o
+[100%] Linking CXX executable path_planning
+[100%] Built target path_planning
+root@45a506d03cee:/home/workspace/CarND-Path-Planning-Project/build# ./path_planning
+Listening to port 4567
+
 
 No changes were made in the cmake configuration. A new file was added [src/spline.h](./scr/spline.h). It is the [Cubic Spline interpolation implementation](http://kluge.in-chemnitz.de/opensource/spline/): a single .h file you can use splines instead of polynomials. It was a great suggestion from the classroom QA video. It works great.
 
