@@ -32,13 +32,20 @@ I did this project in the workspace provided by Udacity. The source code include
 The process of compiling and executing the project is as follows:
 
 Navigate to project ‘CarND-Path-Planning-Project’
+
 Make a build directory in this directory `mkdir build && cd build`
+
 Compile: `cmake .. && make`
+
 Run it: `./path_planning.`
+
 Open the aforementioned simulator
+
 Choose the lowest resolution and graphics quality of fastest for best results
+
 Click the path planning SELECT
 
+Now the path planner is running and listening on port 4567 for messages from the simulator. Next step is to open Udacity's simulator:
 In order to build the project there is a `./build.sh` script on the repo root. It will create the `./build` directory and compile de code. This is an example of the output of this script:
 
 ```
