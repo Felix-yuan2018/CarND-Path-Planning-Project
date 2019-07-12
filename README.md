@@ -50,15 +50,15 @@ Now the path planner is running and listening on port 4567 for messages from the
 
 ### The code compiles correctly.
 
--- Configuring done
--- Generating done
--- Build files have been written to: /home/workspace/CarND-Path-Planning-Project/build
-Scanning dependencies of target path_planning
-[ 50%] Building CXX object CMakeFiles/path_planning.dir/src/main.cpp.o
-[100%] Linking CXX executable path_planning
-[100%] Built target path_planning
-root@45a506d03cee:/home/workspace/CarND-Path-Planning-Project/build# ./path_planning
-Listening to port 4567
+- Configuring done
+- Generating done
+- Build files have been written to: /home/workspace/CarND-Path-Planning-Project/build
+- Scanning dependencies of target path_planning
+- [ 50%] Building CXX object CMakeFiles/path_planning.dir/src/main.cpp.o
+- [100%] Linking CXX executable path_planning
+- [100%] Built target path_planning
+- root@45a506d03cee:/home/workspace/CarND-Path-Planning-Project/build# ./path_planning
+- Listening to port 4567
 
 
 No changes were made in the cmake configuration. A new file was added [src/spline.h](./scr/spline.h). It is the [Cubic Spline interpolation implementation](http://kluge.in-chemnitz.de/opensource/spline/): a single .h file you can use splines instead of polynomials. It was a great suggestion from the classroom QA video. It works great.
@@ -73,7 +73,7 @@ I ran the simulator for 15 and 20 miles without incidents:
 ![20 miles](images/20_miles.png)
 
 ### The car drives according to the speed limit.
-No speed limit red message was seen.
+The speed limit is 50 MPH, no speed limit red message was seen.
 
 ### Max Acceleration and Jerk are not Exceeded.
 Max jerk red message was not seen.
@@ -88,6 +88,8 @@ The car stays in its lane most of the time but when it changes lane because of t
 The car change lanes when the there is a slow car in front of it, and it is safe to change lanes (no other cars around) or when it is safe to return the center lane.
 
 ## Reflection
+
+The path planning algorithms start at [src/main.cpp](./src/main.cpp#L250) line 250 to the line 465. The code model of the generation path is described in detail below：
 
 Based on the provided code from the seed project, the path planning algorithms start at [src/main.cpp](./src/main.cpp#L246) line 246 to the line 416. The code could be separated into different functions to show the overall process, but I prefer to have everything in a single place to avoid jumping to different parts of the file or other files. In a more complicated environment and different requirements, more structure could be used. For now, comments are provided to improve the code readability.
 
