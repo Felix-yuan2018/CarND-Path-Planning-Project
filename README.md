@@ -7,7 +7,9 @@ Udacity Self-Driving Car Nanodegree - Path Planning Project
 
 The goal of this project is to create a path planner that is able to smartly, safely, and comfortably navigate a virtual car (Ego) around a virtual highway with other traffic. 
 We are given a map of the highway, as well as sensor fusion and localization data about our car and nearby cars. We are supposed to give back a set of map points (x, y) that a perfect controller will execute every 0.02 seconds. Navigating safely and comfortably means we don't bump into other cars, we don't exceed the maximum speed, acceleration and jerk requirements. Navigating smartly means we change lanes when we have to.
+
 We need to implement a path planning algorithms to drive a car on a highway on a simulator provided by Udacity ([the simulator could be downloaded here](https://github.com/udacity/self-driving-car-sim/releases/tag/T3_v1.2)). The simulator sends car telemetry information (car's position and velocity) and sensor fusion information about the rest of the cars in the highway (Ex. car id, velocity, position). It expects a set of points spaced in time at 0.02 seconds representing the car's trajectory. The communication between the simulator and the path planner is done using WebSocket. The path planner uses the [WebSocket](https://en.wikipedia.org/wiki/WebSocket) WebSocket implementation to handle this communication.
+
 The original project repository by Udacity you can find ([here](https://github.com/udacity/CarND-Path-Planning-Project)). It provides more information for this project.
 
 # Prerequisites
@@ -25,6 +27,17 @@ For instructions on how to install these components on different operating syste
 In order to install the necessary libraries, use the [install-mac.sh](./install-mac.sh).
 
 # Compiling and executing the project
+
+I did this project in the workspace provided by Udacity. The source code include three files:  main.cpp,  spline.h & json.hpp. 
+The process of compiling and executing the project is as follows:
+
+Navigate to project ‘CarND-Path-Planning-Project’
+Make a build directory in this directory `mkdir build && cd build`
+Compile: `cmake .. && make`
+Run it: `./path_planning.`
+Open the aforementioned simulator
+Choose the lowest resolution and graphics quality of fastest for best results
+Click the path planning SELECT
 
 In order to build the project there is a `./build.sh` script on the repo root. It will create the `./build` directory and compile de code. This is an example of the output of this script:
 
