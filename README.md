@@ -75,8 +75,7 @@ Now the path planner is running and listening on port 4567 for messages from the
 
 ![Simulator first screen](images/simulator.png)
 
-Click the "Select" button and hope for the best on the highway... well... no really... we are not catching, aren't we?
-At the beginning I did, but now it works!
+Click the "Select" button and let EGO self driving on the highway.
 
 # [Rubic](https://review.udacity.com/#!/rubrics/1020/view) points
 
