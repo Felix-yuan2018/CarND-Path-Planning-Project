@@ -31,10 +31,10 @@ In order to install the necessary libraries, use the [install-mac.sh](./install-
 I did this project in the workspace provided by Udacity. The source code include three files:  main.cpp,  spline.h & json.hpp. 
 The process of compiling and executing the project is as follows:
 
--Navigate to project ‘CarND-Path-Planning-Project’
--Make a build directory in this directory `mkdir build && cd build`
--Compile: `cmake .. && make`
--Run it: `./path_planning.`
+- Navigate to project ‘CarND-Path-Planning-Project’
+- Make a build directory in this directory `mkdir build && cd build`
+- Compile: `cmake .. && make`
+- Run it: `./path_planning.`
 
 In order to build the project there is a `./build.sh` script on the repo root. It will create the `./build` directory and compile de code. This is an example of the output of this script:
 
