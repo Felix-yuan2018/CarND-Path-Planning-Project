@@ -7,9 +7,7 @@ Udacity Self-Driving Car Nanodegree - Path Planning Project
 
 The goal of this project is to create a path planner that is able to smartly, safely, and comfortably navigate a virtual car (Ego) around a virtual highway with other traffic. 
 We are given a map of the highway, as well as sensor fusion and localization data about our car and nearby cars. We are supposed to give back a set of map points (x, y) that a perfect controller will execute every 0.02 seconds. Navigating safely and comfortably means we don't bump into other cars, we don't exceed the maximum speed, acceleration and jerk requirements. Navigating smartly means we change lanes when we have to.
-
 We need to implement a path planning algorithms to drive a car on a highway on a simulator provided by Udacity ([the simulator could be downloaded here](https://github.com/udacity/self-driving-car-sim/releases/tag/T3_v1.2)). The simulator sends car telemetry information (car's position and velocity) and sensor fusion information about the rest of the cars in the highway (Ex. car id, velocity, position). It expects a set of points spaced in time at 0.02 seconds representing the car's trajectory. The communication between the simulator and the path planner is done using WebSocket. The path planner uses the [WebSocket](https://en.wikipedia.org/wiki/WebSocket) WebSocket implementation to handle this communication.
-
 The original project repository by Udacity you can find ([here](https://github.com/udacity/CarND-Path-Planning-Project)). It provides more information for this project.
 
 # Prerequisites
